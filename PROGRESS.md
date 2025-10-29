@@ -1,0 +1,6 @@
+- baru bikin hero
+- gambar belum fix
+    - aku pengen gabar di layar belakang dan digedein
+    - illustrasi yang lebih proper
+- toggle dark belum fix
+    - dipertimbangkan tidak usah aja sekalian

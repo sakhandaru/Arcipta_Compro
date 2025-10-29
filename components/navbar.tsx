@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { ModeToggle } from "./ui/dark-toggle";
 
 export default function Navbar() {
   return (
@@ -47,6 +48,7 @@ export default function Navbar() {
           >
             Compass
           </Link>
+          <ModeToggle/>
         </div>
       </div>
     </header>
