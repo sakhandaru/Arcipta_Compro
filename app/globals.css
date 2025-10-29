@@ -24,3 +24,21 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer base {
+  :root {
+    --font-satoshi: "Satoshi", sans-serif;
+  }
+
+  body {
+    @apply font-satoshi antialiased;
+  }
+}
+
+@theme {
+  --font-satoshi: var(--font-satoshi);
+}
+
+@utility font-satoshi {
+  font-family: var(--font-satoshi);
+}

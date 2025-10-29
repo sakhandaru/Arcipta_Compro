@@ -19,7 +19,7 @@ const Section = ({ id, title, color }: { id: string; title: string; color: strin
       {inView ? (
         <div className="text-center">
           <h2 className="text-3xl font-bold mb-4 text-white">{title}</h2>
-          <p className="text-white text-lg">✅ Section ini sudah termuat (lazy loaded)</p>
+          <p className="text-white text-lg font-satoshi">✅ Section ini sudah termuat (lazy loaded)</p>
         </div>
       ) : (
         <div className="w-full max-w-xl flex flex-col items-center gap-3">
@@ -37,7 +37,7 @@ export default function LazyTestPage() {
     <main className="min-h-screen">
       <header className="py-8 text-center border-b border-gray-300 bg-white sticky top-0 z-10">
         <h1 className="text-2xl font-semibold">cek</h1>
-        <p className="text-gray-600 text-sm">Scroll perlahan ke bawah untuk melihat efek lazy load per section.</p>
+        <p className="text-gray-600 text-sm font-satoshi">well king</p>
       </header>
 
       <Section id="one" title="Section 1 — Hero" color="#4F46E5" />
