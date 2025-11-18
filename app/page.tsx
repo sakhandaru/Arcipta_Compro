@@ -15,7 +15,6 @@ import PricingSection from "../components/pricing-section"
 import CTASection from "../components/cta-section"
 import FooterSection from "../components/footer-section"
 import { HeroSection } from "@/components/unused/hero-section"
-import { Header } from "@/components/header"
 import GrowthCompassSection from "@/components/growth-compass"
 import DisplayCards from "@/components/ui/display-cards"
 import { Rocket, Star, Zap } from "lucide-react"
@@ -385,7 +384,7 @@ const customCards = [
         text="Our Process"
       />
 
-      <div className="w-full max-w-[598.06px] lg:w-[598.06px] text-center flex justify-center flex-col text-[#49423D] text-xl sm:text-2xl md:text-3xl lg:text-5xl font-semibold leading-tight md:leading-[60px] font-sans tracking-tight">
+      <div className="w-full max-w-[598.06px] lg:w-[598.06px] text-center flex justify-center flex-col text-[#db6217] text-xl sm:text-2xl md:text-3xl lg:text-5xl font-semibold leading-tight md:leading-[60px] font-sans tracking-tight">
         Proses kerja yang rapi dan mudah dipahami
       </div>
 
@@ -414,7 +413,7 @@ const customCards = [
       {/* Step 1 — Discovery */}
       <div className="border-b border-r-0 md:border-r border-[rgba(55,50,47,0.12)] p-4 sm:p-6 md:p-8 lg:p-12 flex flex-col justify-start items-start gap-4 sm:gap-6">
         <div className="flex flex-col gap-2">
-          <h3 className="text-[#37322F] text-lg sm:text-xl font-semibold leading-tight font-sans">
+          <h3 className="text-[#e8894e] text-lg sm:text-xl font-semibold leading-tight font-sans">
             Discovery & Clarity
           </h3>
           <p className="text-[#605A57] text-sm md:text-base font-normal leading-relaxed font-sans">
@@ -435,7 +434,7 @@ const customCards = [
       {/* Step 2 — Growth Mapping */}
       <div className="border-b border-[rgba(55,50,47,0.12)] p-4 sm:p-6 md:p-8 lg:p-12 flex flex-col justify-start items-start gap-4 sm:gap-6">
         <div className="flex flex-col gap-2">
-          <h3 className="text-[#37322F] font-semibold leading-tight font-sans text-lg sm:text-xl">
+          <h3 className="text-[#e8894e] font-semibold leading-tight font-sans text-lg sm:text-xl">
             Growth Mapping
           </h3>
           <p className="text-[#605A57] text-sm md:text-base font-normal leading-relaxed font-sans">
@@ -450,7 +449,7 @@ const customCards = [
       {/* Step 3 — Build with Efficiency */}
       <div className="border-r-0 md:border-r border-[rgba(55,50,47,0.12)] p-4 sm:p-6 md:p-8 lg:p-12 flex flex-col justify-start items-start gap-4 sm:gap-6 bg-transparent">
         <div className="flex flex-col gap-2">
-          <h3 className="text-[#37322F] text-lg sm:text-xl font-semibold leading-tight font-sans">
+          <h3 className="text-[#e8894e] text-lg sm:text-xl font-semibold leading-tight font-sans">
             Build with Efficiency
           </h3>
           <p className="text-[#605A57] text-sm md:text-base font-normal leading-relaxed font-sans">
@@ -468,7 +467,7 @@ const customCards = [
       {/* Step 4 — Improve Through Insight */}
       <div className="p-4 sm:p-6 md:p-8 lg:p-12 flex flex-col justify-start items-start gap-4 sm:gap-6">
         <div className="flex flex-col gap-2">
-          <h3 className="text-[#37322F] text-lg sm:text-xl font-semibold leading-tight font-sans">
+          <h3 className="text-[#e8894e] text-lg sm:text-xl font-semibold leading-tight font-sans">
             Improve Through Insight
           </h3>
           <p className="text-[#605A57] text-sm md:text-base font-normal leading-relaxed font-sans">

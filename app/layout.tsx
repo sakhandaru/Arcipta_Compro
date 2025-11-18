@@ -1,38 +1,26 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Inter, Playfair_Display } from "next/font/google"
-import "./globals.css"
-import { Header } from "@/components/header"
+import type { Metadata } from "next";
+import "./globals.css";
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-})
-
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-serif",
-  display: "swap",
-})
+import Header from "@/components/header";
+import { satoshi } from "./fonts/satoshi";
 
 export const metadata: Metadata = {
   title: "Brillance - Effortless Custom Contract Billing",
   description:
     "Streamline your billing process with seamless automation for every custom contract, tailored by Brillance.",
-}
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable} antialiased`}>
-      <body className="font-sans antialiased">
+    <html lang="en" className={`${satoshi.variable} antialiased`}>
+      <body className="font-satoshi antialiased bg-white">
         <Header />
         {children}
-        </body>
+      </body>
     </html>
-  )
+  );
 }
