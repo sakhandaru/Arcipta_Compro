@@ -15,25 +15,119 @@ function Badge({ icon, text }: { icon: React.ReactNode; text: string }) {
   )
 }
 
+// Komponen khusus untuk setiap konten
+function UnifiedSystemsContent() {
+  return (
+    <div className="w-full h-full flex flex-col items-center justify-center p-8">
+      <div className="bg-blue-50 p-4 rounded-2xl mb-6">
+        <svg className="w-10 h-10 text-blue-600" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M3 7h6m0 0V3m0 4l4 4m8 6h-6m0 0v4m0-4l-4-4" />
+        </svg>
+      </div>
+
+      <h3 className="text-xl font-semibold text-gray-800 mb-3 text-center">
+        Alur kerja lebih terarah, tim bergerak lebih cepat.
+      </h3>
+
+      <p className="text-gray-600 text-center leading-relaxed max-w-sm">
+        Kami bantu menyatukan proses yang tersebar jadi satu alur yang rapi,
+        sehingga semua divisi bekerja dengan ritme yang sama.
+      </p>
+    </div>
+  )
+}
+
+
+function DataInsightsContent() {
+  return (
+    <div className="w-full h-full flex flex-col items-center justify-center p-8">
+      <div className="bg-purple-50 p-4 rounded-2xl mb-6">
+        <svg className="w-10 h-10 text-purple-600" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M4 19h16M4 10h16M4 5h16M8 5v14M12 10v9M16 5v14" />
+        </svg>
+      </div>
+
+      <h3 className="text-xl font-semibold text-gray-800 mb-3 text-center">
+        Keputusan lebih cepat dengan data yang terhubung.
+      </h3>
+
+      <p className="text-gray-600 text-center leading-relaxed max-w-sm">
+        Integrasi data membuat tiap tim melihat sumber yang sama.
+        Hasilnya: insight yang jelas dan keputusan yang lebih percaya diri.
+      </p>
+    </div>
+  )
+}
+
+
+function CollaborationContent() {
+  return (
+    <div className="w-full h-full flex flex-col items-center justify-center p-8">
+      <div className="bg-green-50 p-4 rounded-2xl mb-6">
+        <svg className="w-10 h-10 text-green-600" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M7 8a4 4 0 118 0 4 4 0 01-8 0zm12 10a6 6 0 10-12 0h12z" />
+        </svg>
+      </div>
+
+      <h3 className="text-xl font-semibold text-gray-800 mb-3 text-center">
+        Kolaborasi yang lebih sinkron di seluruh tim.
+      </h3>
+
+      <p className="text-gray-600 text-center leading-relaxed max-w-sm">
+        Semua orang bekerja dengan konteks yang sama. Informasi mengalir lebih cepat,
+        dan tidak ada lagi miskomunikasi antar divisi.
+      </p>
+    </div>
+  )
+}
+
+
+function AutomationContent() {
+  return (
+    <div className="w-full h-full flex flex-col items-center justify-center p-8">
+      <div className="bg-orange-50 p-4 rounded-2xl mb-6">
+        <svg className="w-10 h-10 text-orange-600" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z" />
+        </svg>
+      </div>
+
+      <h3 className="text-xl font-semibold text-gray-800 mb-3 text-center">
+        Automasi yang mengurangi beban kerja manual.
+      </h3>
+
+      <p className="text-gray-600 text-center leading-relaxed max-w-sm">
+        Kami identifikasi proses yang makan waktu dan mengubahnya menjadi otomatis.
+        Lebih cepat, lebih konsisten, dan hemat energi tim.
+      </p>
+    </div>
+  )
+}
+
+
 export default function DocumentationSection() {
   const [activeCard, setActiveCard] = useState(0)
   const [animationKey, setAnimationKey] = useState(0)
 
   const cards = [
     {
-      title: "Plan your schedules",
-      description: "Explore your data, build your dashboard,\nbring your team together.",
-      image: "/modern-dashboard-interface-with-data-visualization.jpg",
+      title: "Alur kerja makin rumit?",
+      description: "Data dan tugas tersebar di banyak tempat. Tim kewalahan ngatur prioritas.",
+      component: <UnifiedSystemsContent />
     },
     {
-      title: "Data to insights in minutes",
-      description: "Transform raw data into actionable insights\nwith powerful analytics tools.",
-      image: "/analytics-dashboard.png",
+      title: "Terlalu banyak tools yang nggak sinkron?",
+      description: "Informasi penting nyangkut di tengah. Tiap divisi punya versinya sendiri.",
+      component: <DataInsightsContent />
     },
     {
-      title: "Collaborate seamlessly",
-      description: "Work together in real-time with your team\nand share insights instantly.",
-      image: "/team-collaboration-interface-with-shared-workspace.jpg",
+      title: "Kerjaan repetitif makan waktu?",
+      description: "Tugas-tugas sederhana menyita energi yang harusnya untuk hal penting.",
+      component: <CollaborationContent />
+    },
+    {
+      title: "Bisnis berkembang, tapi arahnya belum jelas?",
+      description: "Sulit menentukan prioritas digital mana yang paling berdampak.",
+      component: <AutomationContent />
     },
   ]
 
@@ -41,7 +135,7 @@ export default function DocumentationSection() {
     const interval = setInterval(() => {
       setActiveCard((prev) => (prev + 1) % cards.length)
       setAnimationKey((prev) => prev + 1)
-    }, 5000)
+    }, 4000)
 
     return () => clearInterval(interval)
   }, [cards.length])
@@ -66,9 +160,9 @@ export default function DocumentationSection() {
             Streamline your business operations
           </div>
           <div className="self-stretch text-center text-[#605A57] text-base font-normal leading-7 font-sans">
-            Manage schedules, analyze data, and collaborate with your team
+            Dengan arah yang jelas, sistem Anda menjadi lebih sederhana, 
             <br />
-            all in one powerful platform.
+            otomatis, dan mendukung pertumbuhan yang berkelanjutan.
           </div>
         </div>
       </div>
@@ -85,9 +179,9 @@ export default function DocumentationSection() {
                 <div
                   key={index}
                   onClick={() => handleCardClick(index)}
-                  className={`w-full overflow-hidden flex flex-col justify-start items-start transition-all duration-300 cursor-pointer ${
+                  className={`w-full overflow-hidden flex flex-col justify-start items-start transition-all duration-300 cursor-pointer rounded-lg ${
                     isActive
-                      ? "bg-white shadow-[0px_0px_0px_0.75px_#E0DEDB_inset]"
+                      ? "bg-white shadow-[0px_0px_0px_0.75px_#E0DEDB_inset] border border-[rgba(55,50,47,0.12)]"
                       : "border border-[rgba(2,6,23,0.08)]"
                   }`}
                 >
@@ -96,7 +190,7 @@ export default function DocumentationSection() {
                   >
                     <div
                       key={animationKey}
-                      className="h-0.5 bg-[#322D2B] animate-[progressBar_5s_linear_forwards] will-change-transform"
+                      className="h-0.5 bg-[#322D2B] animate-[progressBar_4s_linear_forwards] will-change-transform"
                     />
                   </div>
                   <div className="px-6 py-5 w-full flex flex-col gap-2">
@@ -112,18 +206,22 @@ export default function DocumentationSection() {
             })}
           </div>
 
-          {/* Right Column - Image */}
+          {/* Right Column - Dynamic Content */}
           <div className="w-full md:w-auto rounded-lg flex flex-col justify-center items-center gap-2 order-1 md:order-2 md:px-0 px-[00]">
-            <div className="w-full md:w-[580px] h-[250px] md:h-[420px] bg-white shadow-[0px_0px_0px_0.9056603908538818px_rgba(0,0,0,0.08)] overflow-hidden rounded-lg flex flex-col justify-start items-start">
+            <div className="w-full md:w-[580px] h-[300px] md:h-[525px] bg-white shadow-[0px_0px_0px_0.9056603908538818px_rgba(0,0,0,0.08)] overflow-hidden rounded-lg flex flex-col justify-start items-start">
               <div
-                className={`w-full h-full transition-all duration-300 ${
+                className={`w-full h-full transition-all duration-500 ease-in-out ${
                   activeCard === 0
-                    ? "bg-gradient-to-br from-blue-50 to-blue-100"
+                    ? "bg-gradient-to-br from-gray-50 to-gray-200"
                     : activeCard === 1
                       ? "bg-gradient-to-br from-purple-50 to-purple-100"
-                      : "bg-gradient-to-br from-green-50 to-green-100"
+                      : activeCard === 2
+                        ? "bg-gradient-to-br from-green-50 to-green-100"
+                        : "bg-gradient-to-br from-orange-50 to-orange-100"
                 }`}
-              />
+              >
+                {cards[activeCard].component}
+              </div>
             </div>
           </div>
         </div>

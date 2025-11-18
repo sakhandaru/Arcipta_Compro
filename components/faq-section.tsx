@@ -9,34 +9,34 @@ interface FAQItem {
 
 const faqData: FAQItem[] = [
   {
-    question: "What is Brillance and who is it for?",
+    question: "Apa itu Arcipta dan siapa yang bisa menggunakannya?",
     answer:
-      "Brillance is a comprehensive billing automation platform designed for businesses that need custom contract management. It's perfect for SaaS companies, service providers, and enterprises looking to streamline their billing processes.",
+      "Arcipta adalah software house yang menyediakan layanan pembuatan website, aplikasi, sistem, dan automasi untuk membantu bisnis tumbuh secara digital. Cocok untuk UMKM, startup, maupun perusahaan skala menengah ke atas.",
   },
   {
-    question: "How does the custom contract billing work?",
+    question: "Layanan apa saja yang disediakan Arcipta?",
     answer:
-      "Our platform automatically processes your custom contracts, calculates billing amounts based on your specific terms, and generates invoices. You can set up complex pricing structures, usage-based billing, and custom billing cycles.",
+      "Kami menawarkan pengembangan web & aplikasi, integrasi sistem, automasi workflow, serta desain antarmuka modern dan user-friendly. Setiap proyek dibuat custom sesuai kebutuhan klien.",
   },
   {
-    question: "Can I integrate Brillance with my existing tools?",
+    question: "Bisakah proyek saya diintegrasikan dengan sistem yang sudah ada?",
     answer:
-      "Yes! Brillance integrates seamlessly with popular CRM systems, accounting software, and payment processors. We support APIs and webhooks for custom integrations with your existing workflow.",
+      "Tentu! Arcipta mendukung integrasi dengan berbagai API dan sistem pihak ketiga agar alur kerja bisnis kamu tetap seamless tanpa harus memulai dari nol.",
   },
   {
-    question: "What kind of support do you provide?",
+    question: "Bagaimana proses kerja Arcipta?",
     answer:
-      "We offer 24/7 customer support, dedicated account managers for enterprise clients, comprehensive documentation, and onboarding assistance to help you get started quickly.",
+      "Proses kami dimulai dari konsultasi kebutuhan, perancangan desain & prototipe, pengembangan sistem, hingga pengujian dan deployment. Kami juga menyediakan dokumentasi dan training untuk tim kamu.",
   },
   {
-    question: "Is my data secure with Brillance?",
+    question: "Apakah data saya aman saat menggunakan layanan Arcipta?",
     answer:
-      "Absolutely. We use enterprise-grade security measures including end-to-end encryption, SOC 2 compliance, and regular security audits. Your data is stored in secure, redundant data centers.",
+      "Kami menerapkan standar keamanan tinggi termasuk backup rutin, enkripsi data, dan praktik terbaik keamanan web & aplikasi untuk memastikan data bisnis kamu selalu terlindungi.",
   },
   {
-    question: "How do I get started with Brillance?",
+    question: "Bagaimana cara memulai bekerja sama dengan Arcipta?",
     answer:
-      "Getting started is simple! Sign up for our free trial, connect your existing systems, and our onboarding team will help you set up your first custom billing workflow within 24 hours.",
+      "Cukup hubungi tim kami melalui website atau email, ceritakan kebutuhan proyek kamu, dan tim kami akan membantu merancang solusi digital yang tepat untuk bisnis kamu.",
   },
 ]
 
@@ -70,11 +70,11 @@ export default function FAQSection() {
           <div className="w-full flex flex-col justify-center text-[#49423D] font-semibold leading-tight md:leading-[44px] font-sans text-4xl tracking-tight">
             Frequently Asked Questions
           </div>
-          <div className="w-full text-[#605A57] text-base font-normal leading-7 font-sans">
-            Explore your data, build your dashboard,
+          {/* <div className="w-full text-[#605A57] text-base font-normal leading-7 font-sans">
+            Temukan jawaban untuk pertanyaan umum mengenai layanan Arcipta,
             <br className="hidden md:block" />
-            bring your team together.
-          </div>
+            dan bagaimana kami membantu bisnis kamu berkembang.
+          </div> */}
         </div>
 
         {/* Right Column - FAQ Items */}
