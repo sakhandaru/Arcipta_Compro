@@ -1,3 +1,4 @@
+
 "use client"
 
 import type React from "react"
@@ -23,9 +24,9 @@ import { Rocket, Star, Zap } from "lucide-react"
 // Reusable Badge Component
 function Badge({ icon, text }: { icon: React.ReactNode; text: string }) {
   return (
-    <div className="px-[14px] py-[6px] bg-white shadow-[0px_0px_0px_4px_rgba(55,50,47,0.05)] overflow-hidden rounded-[90px] flex justify-start items-center gap-[8px] border border-[rgba(2,6,23,0.08)] shadow-xs">
+    <div className="px-[14px] py-[6px] bg-white shadow-[0px_0px_0px_4px_rgba(219,98,23,0.05)] overflow-hidden rounded-[90px] flex justify-start items-center gap-[8px] border border-[rgba(219,98,23,0.08)] shadow-xs">
       <div className="w-[14px] h-[14px] relative overflow-hidden flex items-center justify-center">{icon}</div>
-      <div className="text-center flex justify-center flex-col text-[#37322F] text-xs font-medium leading-3 font-sans">
+      <div className="text-center flex justify-center flex-col text-[#db6217] text-xs font-medium leading-3 font-sans">
         {text}
       </div>
     </div>
@@ -86,30 +87,30 @@ export default function LandingPage() {
 
 const customCards = [
     {
-      icon: <Rocket className="size-4 text-blue-300" />,
+      icon: <Rocket className="size-4 text-[#ff8c42]" />,
       title: "Launch",
       description: "Ready for takeoff",
       date: "Today",
-      iconClassName: "text-blue-500",
-      titleClassName: "text-blue-500",
+      iconClassName: "text-[#db6217]",
+      titleClassName: "text-[#db6217]",
       className: "[grid-area:stack] hover:-translate-y-10 before:absolute before:w-[100%] before:outline-1 before:rounded-xl before:outline-border before:h-[100%] before:content-[''] before:bg-blend-overlay before:bg-background/50 grayscale-[100%] hover:before:opacity-0 before:transition-opacity before:duration:700 hover:grayscale-0 before:left-0 before:top-0",
     },
     {
-      icon: <Star className="size-4 text-yellow-300" />,
+      icon: <Star className="size-4 text-[#ffa85c]" />,
       title: "Featured",
       description: "Top rated content",
       date: "2 days ago",
-      iconClassName: "text-yellow-500",
-      titleClassName: "text-yellow-500",
+      iconClassName: "text-[#db6217]",
+      titleClassName: "text-[#db6217]",
       className: "[grid-area:stack] translate-x-12 translate-y-10 hover:-translate-y-1 before:absolute before:w-[100%] before:outline-1 before:rounded-xl before:outline-border before:h-[100%] before:content-[''] before:bg-blend-overlay before:bg-background/50 grayscale-[100%] hover:before:opacity-0 before:transition-opacity before:duration:700 hover:grayscale-0 before:left-0 before:top-0",
     },
     {
-      icon: <Zap className="size-4 text-purple-300" />,
+      icon: <Zap className="size-4 text-[#ffb974]" />,
       title: "Trending",
       description: "Most popular this week",
       date: "Last week",
-      iconClassName: "text-purple-500",
-      titleClassName: "text-purple-500",
+      iconClassName: "text-[#db6217]",
+      titleClassName: "text-[#db6217]",
       className: "[grid-area:stack] translate-x-24 translate-y-20 hover:translate-y-10",
     },
   ];
@@ -132,7 +133,7 @@ const customCards = [
             <div className="pt-16 sm:pt-20 md:pt-24 lg:pt-[216px] pb-8 sm:pb-12 md:pb-16 flex flex-col justify-start items-center px-2 sm:px-4 md:px-8 lg:px-0 w-full sm:pl-0 sm:pr-0 pl-0 pr-0">
               <div className="w-full max-w-[937px] lg:w-[937px] flex flex-col justify-center items-center gap-3 sm:gap-4 md:gap-5 lg:gap-6">
                 <div className="self-stretch rounded-[3px] flex flex-col justify-center items-center gap-4 sm:gap-5 md:gap-6 lg:gap-8">
-                  <div className="w-full max-w-[820px] lg:w-[820px] text-center flex justify-center flex-col text-[#37322F] text-[28px] xs:text-[32px] sm:text-[40px] md:text-[52px] lg:text-[68px] font-normal leading-[1.10] sm:leading-[1.13] md:leading-[1.15] lg:leading-[1.10] font-serif px-2 sm:px-4 md:px-0">
+                  <div className="w-full max-w-[820px] lg:w-[820px] text-center flex justify-center flex-col text-[#db6217] text-[28px] xs:text-[32px] sm:text-[40px] md:text-[52px] lg:text-[68px] font-normal leading-[1.10] sm:leading-[1.13] md:leading-[1.15] lg:leading-[1.10] font-serif px-2 sm:px-4 md:px-0">
                     Clarity-first digital growth
                     <br />
                     for every business stage.
@@ -145,8 +146,8 @@ const customCards = [
 
               <div className="w-full max-w-[497px] lg:w-[497px] flex flex-col justify-center items-center gap-6 sm:gap-8 md:gap-10 lg:gap-12 relative z-10 mt-6 sm:mt-8 md:mt-10 lg:mt-12">
                 <div className="backdrop-blur-[8.25px] flex justify-start items-center gap-4">
-                  <div className="h-10 sm:h-11 md:h-12 px-6 sm:px-8 md:px-10 lg:px-12 py-2 sm:py-[6px] relative bg-[#37322F] shadow-[0px_0px_0px_2.5px_rgba(255,255,255,0.08)_inset] overflow-hidden rounded-full flex justify-center items-center">
-                    <div className="w-20 sm:w-24 md:w-28 lg:w-44 h-[41px] absolute left-0 top-[-0.5px] bg-gradient-to-b from-[rgba(255,255,255,0)] to-[rgba(0,0,0,0.10)] mix-blend-multiply"></div>
+                  <div className="h-10 sm:h-11 md:h-12 px-6 sm:px-8 md:px-10 lg:px-12 py-2 sm:py-[6px] relative bg-[#db6217] shadow-[0px_0px_0px_2.5px_rgba(219,98,23,0.08)_inset] overflow-hidden rounded-full flex justify-center items-center">
+                    <div className="w-20 sm:w-24 md:w-28 lg:w-44 h-[41px] absolute left-0 top-[-0.5px] bg-gradient-to-b from-[rgba(255,255,255,0)] to-[rgba(219,98,23,0.10)] mix-blend-multiply"></div>
                     <div className="flex flex-col justify-center text-white text-sm sm:text-base md:text-[15px] font-medium leading-5 font-sans">
                       Mulai Konsultasi
                     </div>
@@ -160,7 +161,7 @@ const customCards = [
                   alt=""
                   className="w-[936px] sm:w-[1404px] md:w-[2106px] lg:w-[2808px] h-auto opacity-30 sm:opacity-40 md:opacity-50 mix-blend-multiply"
                   style={{
-                    filter: "hue-rotate(15deg) saturate(0.7) brightness(1.2)",
+                    filter: "hue-rotate(0deg) saturate(1.2) brightness(1.1)",
                   }}
                 />
               </div>
@@ -204,7 +205,7 @@ const customCards = [
                           <img
                             src="/data-visualization-dashboard-with-interactive-char.jpg"
                             alt="Data Visualization Dashboard"
-                            className="w-full h-full object-contain" // Changed from object-cover to object-contain to preserve landscape aspect ratio
+                            className="w-full h-full object-contain"
                           />
                         </div>
                       </div>
@@ -271,23 +272,23 @@ const customCards = [
                     <Badge
                       icon={
                         <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <rect x="1" y="3" width="4" height="6" stroke="#37322F" strokeWidth="1" fill="none" />
-                          <rect x="7" y="1" width="4" height="8" stroke="#37322F" strokeWidth="1" fill="none" />
-                          <rect x="2" y="4" width="1" height="1" fill="#37322F" />
-                          <rect x="3.5" y="4" width="1" height="1" fill="#37322F" />
-                          <rect x="2" y="5.5" width="1" height="1" fill="#37322F" />
-                          <rect x="3.5" y="5.5" width="1" height="1" fill="#37322F" />
-                          <rect x="8" y="2" width="1" height="1" fill="#37322F" />
-                          <rect x="9.5" y="2" width="1" height="1" fill="#37322F" />
-                          <rect x="8" y="3.5" width="1" height="1" fill="#37322F" />
-                          <rect x="9.5" y="3.5" width="1" height="1" fill="#37322F" />
-                          <rect x="8" y="5" width="1" height="1" fill="#37322F" />
-                          <rect x="9.5" y="5" width="1" height="1" fill="#37322F" />
+                          <rect x="1" y="3" width="4" height="6" stroke="#db6217" strokeWidth="1" fill="none" />
+                          <rect x="7" y="1" width="4" height="8" stroke="#db6217" strokeWidth="1" fill="none" />
+                          <rect x="2" y="4" width="1" height="1" fill="#db6217" />
+                          <rect x="3.5" y="4" width="1" height="1" fill="#db6217" />
+                          <rect x="2" y="5.5" width="1" height="1" fill="#db6217" />
+                          <rect x="3.5" y="5.5" width="1" height="1" fill="#db6217" />
+                          <rect x="8" y="2" width="1" height="1" fill="#db6217" />
+                          <rect x="9.5" y="2" width="1" height="1" fill="#db6217" />
+                          <rect x="8" y="3.5" width="1" height="1" fill="#db6217" />
+                          <rect x="9.5" y="3.5" width="1" height="1" fill="#db6217" />
+                          <rect x="8" y="5" width="1" height="1" fill="#db6217" />
+                          <rect x="9.5" y="5" width="1" height="1" fill="#db6217" />
                         </svg>
                       }
                       text="Social Proof"
                     />
-                    <div className="w-full max-w-[472.55px] text-center flex justify-center flex-col text-[#49423D] text-xl sm:text-2xl md:text-3xl lg:text-5xl font-semibold leading-tight md:leading-[60px] font-sans tracking-tight">
+                    <div className="w-full max-w-[472.55px] text-center flex justify-center flex-col text-[#db6217] text-xl sm:text-2xl md:text-3xl lg:text-5xl font-semibold leading-tight md:leading-[60px] font-sans tracking-tight">
                       Trusted across industries
                     </div>
                     <div className="self-stretch text-center text-[#605A57] text-sm sm:text-base font-normal leading-6 sm:leading-7 font-sans">
@@ -375,10 +376,10 @@ const customCards = [
       <Badge
         icon={
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="1" y="1" width="4" height="4" stroke="#37322F" strokeWidth="1" fill="none" />
-            <rect x="7" y="1" width="4" height="4" stroke="#37322F" strokeWidth="1" fill="none" />
-            <rect x="1" y="7" width="4" height="4" stroke="#37322F" strokeWidth="1" fill="none" />
-            <rect x="7" y="7" width="4" height="4" stroke="#37322F" strokeWidth="1" fill="none" />
+            <rect x="1" y="1" width="4" height="4" stroke="#db6217" strokeWidth="1" fill="none" />
+            <rect x="7" y="1" width="4" height="4" stroke="#db6217" strokeWidth="1" fill="none" />
+            <rect x="1" y="7" width="4" height="4" stroke="#db6217" strokeWidth="1" fill="none" />
+            <rect x="7" y="7" width="4" height="4" stroke="#db6217" strokeWidth="1" fill="none" />
           </svg>
         }
         text="Our Process"
@@ -442,12 +443,6 @@ const customCards = [
           </p>
         </div>
         <div className="w-full h-[200px] sm:h-[250px] md:h-[300px] rounded-lg flex overflow-hidden text-right items-center justify-center">
-          {/* <YourWorkInSync
-            width="400"
-            height="250"
-            theme="light"
-            className="scale-60 sm:scale-75 md:scale-90"
-          /> */}
           <DisplayCards cards={customCards}/>
         </div>
       </div>
@@ -549,22 +544,25 @@ function FeatureCard({
 }) {
   return (
     <div
-      className={`w-full md:flex-1 self-stretch px-6 py-5 overflow-hidden flex flex-col justify-start items-start gap-2 cursor-pointer relative border-b md:border-b-0 last:border-b-0 ${isActive
-          ? "bg-white shadow-[0px_0px_0px_0.75px_#E0DEDB_inset]"
-          : "border-l-0 border-r-0 md:border border-[#E0DEDB]/80"
-        }`}
+      className={`w-full md:flex-1 self-stretch px-6 py-5 overflow-hidden flex flex-col justify-start items-start gap-2 cursor-pointer relative border-b md:border-b-0 last:border-b-0 transition-colors duration-200 ${
+        isActive
+          ? "bg-white shadow-[0px_0px_0px_0.75px_#db6217_inset] border-l-0 border-r-0"
+          : "border-l-0 border-r-0 md:border border-[#E0DEDB]/80 hover:border-[#db6217]/30"
+      }`}
       onClick={onClick}
     >
       {isActive && (
-        <div className="absolute top-0 left-0 w-full h-0.5 bg-[rgba(50,45,43,0.08)]">
+        <div className="absolute top-0 left-0 w-full h-0.5 bg-[rgba(219,98,23,0.08)]">
           <div
-            className="h-full bg-[#322D2B] transition-all duration-100 ease-linear"
+            className="h-full bg-[#db6217] transition-all duration-100 ease-linear"
             style={{ width: `${progress}%` }}
           />
         </div>
       )}
 
-      <div className="self-stretch flex justify-center flex-col text-[#49423D] text-sm md:text-sm font-semibold leading-6 md:leading-6 font-sans">
+      <div className={`self-stretch flex justify-center flex-col text-sm md:text-sm font-semibold leading-6 md:leading-6 font-sans ${
+        isActive ? "text-[#db6217]" : "text-[#49423D]"
+      }`}>
         {title}
       </div>
       <div className="self-stretch text-[#605A57] text-[13px] md:text-[13px] font-normal leading-[22px] md:leading-[22px] font-sans">

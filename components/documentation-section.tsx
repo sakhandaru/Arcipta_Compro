@@ -156,7 +156,7 @@ export default function DocumentationSection() {
             }
             text="Platform Features"
           />
-          <div className="self-stretch text-center flex justify-center flex-col text-[#49423D] text-3xl md:text-5xl font-semibold leading-tight md:leading-[60px] font-sans tracking-tight">
+          <div className="self-stretch text-center flex justify-center flex-col text-[#db6217] text-3xl md:text-5xl font-semibold leading-tight md:leading-[60px] font-sans tracking-tight">
             Streamline your business operations
           </div>
           <div className="self-stretch text-center text-[#605A57] text-base font-normal leading-7 font-sans">

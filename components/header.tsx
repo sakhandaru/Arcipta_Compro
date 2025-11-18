@@ -52,19 +52,22 @@ export function Header() {
     >
       <nav
         className={cn(
-          "flex h-14 w-full items-center justify-between px-4 md:h-12 md:transition-all md:ease-out",
+          "flex h-18 w-full items-center justify-between px-4 md:h-14 md:transition-all md:ease-out",
           {
             "md:px-6": scrolled,
           }
         )}
       >
-        <div className="flex items-center gap-2">
+        {/* Logo Section - Left */}
+        <div className="flex items-center gap-2 md:flex-1">
           <a className="rounded-md p-2 hover:bg-accent" href="#">
             <img src="/asset/logo.png" alt="Logo" className="h-6" />
           </a>
-          <span className="text-lg font-semibold">arcipta.com</span>
+          {/* <span className="text-lg font-semibold">arcipta.com</span> */}
         </div>
-        <div className="hidden items-center gap-2 md:flex">
+
+        {/* Menu Links - Center */}
+        <div className="hidden items-center justify-center gap-2 md:flex md:flex-1">
           {links.map((link, i) => (
             <a
               className={buttonVariants({ variant: "ghost" })}
@@ -74,17 +77,23 @@ export function Header() {
               {link.label}
             </a>
           ))}
-          <Button variant="outline">Sign In</Button>
-          <Button>Get Started</Button>
         </div>
-        <Button
-          className="md:hidden"
-          onClick={() => setOpen(!open)}
-          size="icon"
-          variant="outline"
-        >
-          <MenuToggleIcon className="size-5" duration={300} open={open} />
-        </Button>
+
+        {/* CTA Buttons - Right */}
+        <div className="flex items-center justify-end gap-2 md:flex-1">
+          <div className="hidden items-center gap-2 md:flex">
+            
+            <Button variant="default">Get Started</Button>
+          </div>
+          <Button
+            className="md:hidden"
+            onClick={() => setOpen(!open)}
+            size="icon"
+            variant="outline"
+          >
+            <MenuToggleIcon className="size-5" duration={300} open={open} />
+          </Button>
+        </div>
       </nav>
 
       <MobileMenu className="flex flex-col justify-between gap-2" open={open}>

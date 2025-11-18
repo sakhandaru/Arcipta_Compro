@@ -21,17 +21,17 @@ export default function GrowthCompassVertical() {
       {/* Header Section - Konsisten dengan bagian lain */}
       <div className="self-stretch px-4 sm:px-6 md:px-8 lg:px-0 lg:max-w-[1060px] lg:w-[1060px] py-8 sm:py-12 md:py-16 border-b border-[rgba(55,50,47,0.12)] flex justify-center items-center gap-6">
         <div className="w-full max-w-[616px] lg:w-[616px] px-4 sm:px-6 py-4 sm:py-5 shadow-[0px_2px_4px_rgba(50,45,43,0.06)] overflow-hidden rounded-lg flex flex-col justify-start items-center gap-3 sm:gap-4 shadow-none">
-          <div className="px-[14px] py-[6px] bg-white shadow-[0px_0px_0px_4px_rgba(55,50,47,0.05)] overflow-hidden rounded-[90px] flex justify-start items-center gap-[8px] border border-[rgba(2,6,23,0.08)] shadow-xs">
+          <div className="px-[14px] py-[6px] bg-white shadow-[0px_0px_0px_4px_rgba(219,98,23,0.05)] overflow-hidden rounded-[90px] flex justify-start items-center gap-[8px] border border-[rgba(219,98,23,0.08)] shadow-xs">
             <div className="w-[14px] h-[14px] relative overflow-hidden flex items-center justify-center">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 3L4 1L7 3L10 1M1 7L4 5L7 7L10 5M1 11L4 9L7 11L10 9" stroke="#37322F" strokeWidth="1" fill="none" />
+                <path d="M1 3L4 1L7 3L10 1M1 7L4 5L7 7L10 5M1 11L4 9L7 11L10 9" stroke="#db6217" strokeWidth="1" fill="none" />
               </svg>
             </div>
-            <div className="text-center flex justify-center flex-col text-[#37322F] text-xs font-medium leading-3 font-sans">
+            <div className="text-center flex justify-center flex-col text-[#db6217] text-xs font-medium leading-3 font-sans">
               Growth Compass
             </div>
           </div>
-          <div className="w-full max-w-[598.06px] lg:w-[598.06px] text-center flex justify-center flex-col text-[#49423D] text-xl sm:text-2xl md:text-3xl lg:text-5xl font-semibold leading-tight md:leading-[60px] font-sans tracking-tight">
+          <div className="w-full max-w-[598.06px] lg:w-[598.06px] text-center flex justify-center flex-col text-[#db6217] text-xl sm:text-2xl md:text-3xl lg:text-5xl font-semibold leading-tight md:leading-[60px] font-sans tracking-tight">
             Peta arah yang bikin setiap langkah lebih terukur.
           </div>
           <div className="self-stretch text-center text-[#605A57] text-sm sm:text-base font-normal leading-6 sm:leading-7 font-sans">
@@ -67,14 +67,14 @@ export default function GrowthCompassVertical() {
             className="border-b border-[rgba(55,50,47,0.12)] p-4 sm:p-6 md:p-8 lg:p-12 flex flex-col justify-start items-start gap-4 sm:gap-6"
           >
             <div className="flex items-start gap-4 sm:gap-6 w-full">
-              {/* Step Indicator - Konsisten dengan style badge */}
-              <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 bg-[#37322F] text-white rounded-full flex items-center justify-center font-semibold text-sm sm:text-base">
+              {/* Step Indicator - Diubah menjadi jingga */}
+              <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 bg-[#db6217] text-white rounded-full flex items-center justify-center font-semibold text-sm sm:text-base shadow-[0px_0px_0px_2px_rgba(219,98,23,0.1)]">
                 1
               </div>
               
               <div className="flex-1 flex flex-col gap-4 sm:gap-6">
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-[#37322F] text-lg sm:text-xl font-semibold leading-tight font-sans">
+                  <h3 className="text-[#db6217] text-lg sm:text-xl font-semibold leading-tight font-sans">
                     LaunchPad
                   </h3>
                   <p className="text-[#605A57] text-sm md:text-base font-normal leading-relaxed font-sans">
@@ -107,13 +107,13 @@ export default function GrowthCompassVertical() {
             className="border-b border-[rgba(55,50,47,0.12)] p-4 sm:p-6 md:p-8 lg:p-12 flex flex-col justify-start items-start gap-4 sm:gap-6"
           >
             <div className="flex items-start gap-4 sm:gap-6 w-full">
-              <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 bg-[#37322F] text-white rounded-full flex items-center justify-center font-semibold text-sm sm:text-base">
+              <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 bg-[#db6217] text-white rounded-full flex items-center justify-center font-semibold text-sm sm:text-base shadow-[0px_0px_0px_2px_rgba(219,98,23,0.1)]">
                 2
               </div>
               
               <div className="flex-1 flex flex-col gap-4 sm:gap-6">
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-[#37322F] text-lg sm:text-xl font-semibold leading-tight font-sans">
+                  <h3 className="text-[#db6217] text-lg sm:text-xl font-semibold leading-tight font-sans">
                     Operate
                   </h3>
                   <p className="text-[#605A57] text-sm md:text-base font-normal leading-relaxed font-sans">
@@ -146,13 +146,13 @@ export default function GrowthCompassVertical() {
             className="p-4 sm:p-6 md:p-8 lg:p-12 flex flex-col justify-start items-start gap-4 sm:gap-6"
           >
             <div className="flex items-start gap-4 sm:gap-6 w-full">
-              <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 bg-[#37322F] text-white rounded-full flex items-center justify-center font-semibold text-sm sm:text-base">
+              <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 bg-[#db6217] text-white rounded-full flex items-center justify-center font-semibold text-sm sm:text-base shadow-[0px_0px_0px_2px_rgba(219,98,23,0.1)]">
                 3
               </div>
               
               <div className="flex-1 flex flex-col gap-4 sm:gap-6">
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-[#37322F] text-lg sm:text-xl font-semibold leading-tight font-sans">
+                  <h3 className="text-[#db6217] text-lg sm:text-xl font-semibold leading-tight font-sans">
                     Innovate
                   </h3>
                   <p className="text-[#605A57] text-sm md:text-base font-normal leading-relaxed font-sans">
@@ -194,15 +194,14 @@ export default function GrowthCompassVertical() {
   );
 }
 
-/* ------------------------------- COMPONENTS ------------------------------- */
 
 function BenefitItem({ text }: BenefitItemProps) {
   return (
     <div className="flex items-start gap-3 group">
-      <div className="w-4 h-4 sm:w-5 sm:h-5 mt-0.5 bg-white border border-[rgba(55,50,47,0.15)] rounded flex items-center justify-center flex-shrink-0 group-hover:border-[#37322F] transition-colors duration-200">
-        <Check className="w-3 h-3 text-[#37322F]" strokeWidth={2.5} />
+      <div className="w-4 h-4 sm:w-5 sm:h-5 mt-0.5 bg-white border border-[rgba(219,98,23,0.3)] rounded flex items-center justify-center flex-shrink-0 group-hover:border-[#db6217] group-hover:bg-[#db6217] transition-all duration-200 shadow-[0px_0px_0px_1px_rgba(219,98,23,0.1)]">
+        <Check className="w-3 h-3 text-[#db6217] group-hover:text-white transition-colors duration-200" strokeWidth={2.5} />
       </div>
-      <span className="text-[#605A57] text-sm leading-relaxed group-hover:text-[#37322F] transition-colors duration-200 font-sans">
+      <span className="text-[#605A57] text-sm leading-relaxed group-hover:text-[#db6217] transition-colors duration-200 font-sans">
         {text}
       </span>
     </div>
